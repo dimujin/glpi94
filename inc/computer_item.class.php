@@ -48,7 +48,7 @@ class Computer_Item extends CommonDBRelation{
    static public $itemtype_2          = 'itemtype';
    static public $items_id_2          = 'items_id';
    static public $checkItem_2_Rights  = self::HAVE_VIEW_RIGHT_ON_ITEM;
-
+//  static public $checkItem_2_Rights  = self::HAVE_SAME_RIGHT_ON_ITEM;
 
    function getForbiddenStandardMassiveAction() {
 
