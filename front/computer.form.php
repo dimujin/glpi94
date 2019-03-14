@@ -73,8 +73,8 @@ if (isset($_POST["add"])) {
    $computer->check($_POST['id'], DELETE);
    if ($computer->restore($_POST)) {
       Event::log($_POST["id"], "computers", 4, "inventory",
-                // TRANS: %s is the user login
-                  sprintf(__('%s restores an item'), $_SESSION["glpiname"]));
+                 //TRANS: %s is the user login
+                 sprintf(__('%s restores an item'), $_SESSION["glpiname"]));
    }
    $computer->redirectToList();
 
